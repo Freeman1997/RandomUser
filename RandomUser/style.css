@@ -34,28 +34,54 @@
 }
 .iconDes{
   padding: 5ch 0;
+  height: 15rem;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   letter-spacing: .2ch;
   
 }
 .iconDes h1{
-  color: rgb(255, 255, 255);
-  
+  color: rgb(255, 255, 255);  
 }
 .iconList{
   display: flex;
   gap: 4ch;
   justify-content: center;
+  overflow: hidden;
 }
 .icon{
   padding-top: .3ch;
   border-top: 2px solid rgba(255, 255, 255, 0);
   font-size: 2rem;
-  cursor: pointer;
+  cursor: pointer; 
+  transform: translateY(0%); 
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
 }
-.hoverIcon{
-  border-top: 2px solid #fff;
-  color: #fafbfc;
+.hoverIcon{  
+  transform: translateY(-100%); 
+}
+.blueIcon{
+  position: absolute; 
+  padding-top: .3ch;
+  border-top: 2px solid rgba(255, 255, 255, 0);
+  font-size: 2rem;
+  cursor: pointer;
+  color: #75cee4;
+  border-top: 2px solid rgba(255, 255, 255, 0); 
+  transform: translateY(0%);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+.hoverBlueIcon{   
+  color: #75cee4;
+  border-top: 2px solid #75cee4;
+  transform: translateY(-100%);
+}
+.littleIconHome{
+  position: relative;  
+
 }
 .imgBox{
   position: absolute;
