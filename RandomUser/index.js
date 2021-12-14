@@ -47,8 +47,7 @@ function showOutput(res) {
 }
 getData()
 
-function eventHandler(paramOne, paramTwo, index) {
-    console.log(index);
+function eventHandler(paramOne, paramTwo, index) {    
     icons.forEach(item => item.classList.remove("hoverIcon"))
     blueIcons.forEach(item => item.classList.remove("hoverBlueIcon"))
     subTitle.innerText = paramOne
