@@ -1,0 +1,72 @@
+*,*::before,*::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.profileBox{
+  background: #2193b0;
+  color: rgba(240, 248, 255, 0.76);
+  margin: 10ch auto;
+  width: 60%;
+  position: relative;
+  border-radius: 10px;
+  overflow-wrap: break-word;
+ 
+}
+.profileUp{
+  background: #373B44;
+  height: 20ch;
+  border-bottom: .5px solid #ffffff80;
+  border-radius: 10px 10px 0 0;
+  
+}
+.iconBox{
+  border-radius: 0 0 10px 10px;
+  padding: 5ch;
+  background: #0F2027;
+  text-align: center;
+}
+.iconDes{
+  padding: 5ch 0;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  letter-spacing: .2ch;
+  
+}
+.iconDes h1{
+  color: rgb(255, 255, 255);
+  
+}
+.iconList{
+  display: flex;
+  gap: 4ch;
+  justify-content: center;
+}
+.icon{
+  padding-top: .3ch;
+  border-top: 2px solid rgba(255, 255, 255, 0);
+  font-size: 2rem;
+  cursor: pointer;
+}
+.hoverIcon{
+  border-top: 2px solid #fff;
+  color: #fafbfc;
+}
+.imgBox{
+  position: absolute;
+  width: 25ch;
+  height: 25ch;
+  inset:2ch;
+  margin: 0 auto;
+}
+.proImage{
+  width: 100%;
+  height: 100%;
+  border-radius:50% 50% 50% 50%;
+}
+
