@@ -47,15 +47,15 @@ getData()
 function eventHandler(paramOne, paramTwo, e) {
   var div = e.target.closest('div')
   var nodes = Array.from(e.target.closest('ul').children)
-  let getIndex = 0
-  getIndex = nodes.indexOf(div)
+  let index = 0
+  index = nodes.indexOf(div)
 
   icons.forEach((item) => item.classList.remove('hoverIcon'))
   blueIcons.forEach((item) => item.classList.remove('hoverBlueIcon'))
   subTitle.innerText = paramOne
   title.innerText = paramTwo
-  icons[getIndex].classList.add('hoverIcon')
-  blueIcons[getIndex].classList.add('hoverBlueIcon')
+  icons[index].classList.add('hoverIcon')
+  blueIcons[index].classList.add('hoverBlueIcon')
 }
 
 icons[0].addEventListener('mouseenter', (e) => {
